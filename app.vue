@@ -7,7 +7,7 @@
         >
           <!-- Left sidebar -->
 
-          <div class="md:block xs-col-span-1 xl:col-span-2">
+          <div class="hidden md:block xs-col-span-1 xl:col-span-2">
             <div class="sticky top-0">
               <SidebarLeft />
             </div>
@@ -15,7 +15,18 @@
 
           <!-- Main content -->
 
+          <main class="col-span-12 md:col-span-8 xl:col-span-6">
+            <router-view></router-view>
+          </main>
           <!-- Right Sidebar -->
+
+          <div class="hidden col-span-12 md:block md:col-span-3 xl:col-span-4">
+            <div class="sticky top-0">
+              <SidebarRight />
+            </div>
+          </div>
+
+          <!-- end -->
         </div>
       </div>
     </div>
